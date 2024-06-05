@@ -1,0 +1,14 @@
+redis:
+  name: redis-group
+  role: master
+  password: redis
+  sentinels:
+    -
+      host: redis-sentinel-1.redis.orb.local
+      port: 26379
+    -
+      host: redis-sentinel-2.redis.orb.local
+      port: 26379
+    -
+      host: redis-sentinel-3.redis.orb.local
+      port: 26379

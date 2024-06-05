@@ -1,0 +1,10 @@
+CREATE USER 'user'@'%' IDENTIFIED BY 'password';
+GRANT ALL ON test.* TO 'user'@'%';
+
+CREATE USER 'replica'@'%' IDENTIFIED WITH mysql_native_password BY 'replica';
+GRANT REPLICATION SLAVE ON *.* TO 'replica'@'%';
+FLUSH PRIVILEGES;
+
+CREATE DATABASE IF NOT EXISTS test;
+USE test;
+CREATE TABLE IF NOT EXISTS users (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255));

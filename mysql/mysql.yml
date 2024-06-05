@@ -1,0 +1,6 @@
+mysql:
+  host: "mysql-2.mysql.orb.local"
+  username: "user"
+  password: "password"
+  ssl: true
+  ssl_mode: 4 # Trilogy::SSL_PREFERRED_NOVERIFY

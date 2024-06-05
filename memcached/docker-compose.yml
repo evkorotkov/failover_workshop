@@ -1,0 +1,8 @@
+services:
+  memcached_1:
+    image: bitnami/memcached:1.6.28-debian-12-r0
+    command: ["memcached", "-m 1024"]
+
+  memcached_2:
+    image: bitnami/memcached:1.6.28-debian-12-r0
+    command: ["memcached", "-m 1024"]

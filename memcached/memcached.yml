@@ -1,0 +1,6 @@
+memcached:
+  failover: false
+  expires_in: 7200
+  servers:
+    - memcached-1.memcached.orb.local
+    - memcached-2.memcached.orb.local
